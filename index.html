@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" 
+          crossorigin="anonymous">
+
+    <link rel="stylesheet" href=
+          "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="custom-cursor" id="customCursor"></div>
+
+    <div style="position: sticky; top: 35px;">
+        <div class="flex-center">
+            <div class="header">
+                <button id="info" class="btn button-header active" onclick="changeActionButton('info')">General Info</button>
+                <button id="education" class="btn button-header" onclick="changeActionButton('education')">Education</button>
+                <button id="skills" class="btn button-header" onclick="changeActionButton('skills')">Skills</button>
+                <button id="work" class="btn button-header" onclick="changeActionButton('work')">Work Experience</button>
+                <button id="project" class="btn button-header" onclick="changeActionButton('project')">Projects</button>
+            </div>  
+        </div>
+    </div>
+
+    <div id="info-section">
+        <div class="flex-center" style="justify-content: space-between;">
+            <div class="title">
+                <h4>Portafolio by</h4>
+                <h1>Iker Ruiz Kerclova</h1>
+            </div>
+        
+            <div style="width: 70%;">
+                <div class="flex-center" style="width: 100%; justify-content: space-evenly;">
+                    <a href="https://www.linkedin.com/in/iker-ruiz-278b8a208"><i class="bi bi-linkedin" style="color: white; font-size: 100px;"></i></a>
+                    <a href="https://github.com/KONORXL"><i class="bi bi-github" style="color: white; font-size: 100px;"></i></a>
+                    <a href="https://www.instagram.com/iker_rk/"><i class="bi bi-instagram" style="color: white; font-size: 100px;"></i></a>
+                    <a href="mailto:ikerrk2322003@gmail.com"><i class="bi bi-envelope" style="color: white; font-size: 100px;"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-center" style="margin: 20px; text-align: center;">
+            <p id="presentation" style="width: 60%;">I am a passionate programmer currently in the final years of my university studies, with over a year and a half of professional experience working in a tech company. Throughout this time, I have developed and refined my skills in both frontend and backend development, allowing me to approach projects with a comprehensive perspective to build robust and efficient solutions. I am known for being a problem-solver with a proactive mindset, thriving in team environments where I contribute creativity and critical thinking to achieve common goals. I am always seeking new challenges that expand my knowledge and foster my professional growth.</p>
+        </div>
+    </div>
+    <div class="flex-center">
+        <hr>
+    </div>
+
+    <div id="education-section">
+        <h1>Education</h1>
+        <div class="flex-center" style="width: 100%; justify-content: space-evenly; margin: 50px 0px;">
+            <div class="education-card">
+                <h3>Ins Sant Feliu</h3>
+                <p>Studied there for 6 years</p>
+                <img src="./img/images.png" alt="" width="100px" height="auto">
+            </div>
+            <div class="education-card">
+                <h3>UdG</h3>
+                <p>Studying Computer Engineering since 2021 in Escola Politecnica of UdG</p>
+                <img src="./img/LogoUdGVectorial.png" alt="" width="100px" height="auto">
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="flex-center">
+        <hr>
+    </div>
+
+    
+    <div id="skills-section">
+        <h1>Skills</h1>
+        <!-- Swiper Slider -->
+        <div class="swiper mySwiper" style="margin-top: 50px; margin-bottom: 50px;">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <h3>Java</h3>
+                    <img src="./img/java.png" alt="" width="300px">
+                </div>
+                <div class="swiper-slide">
+                    <h3 style="margin-bottom: 30px;">C++</h3>
+                    <img src="./img/c++.png" alt="" width="100px">
+                </div>
+                <div class="swiper-slide">
+                    <h3 style="margin-bottom: 20px;">JavaScript</h3>
+                    <img src="./img/js.png" alt="" width="120px">
+                </div>
+                <div class="swiper-slide">
+                    <h3>HTML/CSS</h3>
+                    <img src="./img/htmlcss.png" alt="" width="200px">
+                </div>
+                <div class="swiper-slide">
+                    <h3 style="margin-bottom: 20px;">Python</h3>
+                    <img src="./img/python.png" alt="" width="230px">
+                </div>
+                <div class="swiper-slide">
+                    <h3 style="margin-bottom: 30px;">R</h3>
+                    <img src="./img/r.png" alt="" width="130px">
+                </div>
+                <div class="swiper-slide">
+                    <h3 style="margin-bottom: 40px;">Angular</h3>
+                    <img src="./img/angular.png" alt="" width="250px">
+                </div>
+                <div class="swiper-slide">
+                    <h3>Node.js</h3>
+                    <img src="./img/nodejs.png" alt="" width="300px">
+                </div>
+                <div class="swiper-slide">
+                    <h3>PostgreSQL</h3>
+                    <img src="./img/postgresql.png" alt="" width="250px">
+                </div>
+                <div class="swiper-slide">
+                    <h3>AWS</h3>
+                    <img src="./img/aws.jpg" alt="" width="140px">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+    
+    <div class="flex-center">
+        <hr>
+    </div>
+
+    <div id="work-section">
+        <h1>Work experience</h1>
+        <div class="container" style="border-radius: 20%; margin-top: 50px; margin-bottom: 50px;">
+            <img src="./img/logo_active.png" alt="Avatar" class="image" style="padding: 20px;">
+            <div class="overlay" style="width: 100%; display: flex; justify-content: center; align-items: center; border-radius: 5%;">
+                <div>
+                    <a style="text-decoration: none; color: white;" href="https://plataforma.optimaoficina.es/es/optimahome/main/es/index.html">Optima Energia (2022-actual)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-center">
+        <hr>
+    </div>
+
+    <div id="project-section">
+        <h1>Projects</h1>
+        <h1 id="comingsoon" style="text-align: center; margin-top: 50px; margin-bottom: 50px;">Coming soon...</h1>
+    </div>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    </script>
+</body>
+</html>
