@@ -88,3 +88,35 @@ function scrollToSection(sectionId) {
         });
     }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const sections = [
+        { id: 'info-section', buttonId: 'info' },
+        { id: 'education-section', buttonId: 'education' },
+        { id: 'skills-section', buttonId: 'skills' },
+        { id: 'work-section', buttonId: 'work' },
+        { id: 'project-section', buttonId: 'project' }
+    ];
+
+    const headerButtons = document.querySelectorAll('.button-header');
+
+    window.addEventListener('scroll', () => {
+        let currentSectionId = '';
+
+        sections.forEach((section) => {
+            const sectionElement = document.getElementById(section.id);
+            const sectionTop = sectionElement.offsetTop;
+            const sectionHeight = sectionElement.clientHeight;
+            if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
+                currentSectionId = section.buttonId;
+            }
+        });
+
+        headerButtons.forEach((button) => {
+            button.classList.remove('active');
+            if (button.id === currentSectionId) {
+                button.classList.add('active');
+            }
+        });
+    });
+});
